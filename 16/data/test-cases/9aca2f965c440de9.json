@@ -1,0 +1,59 @@
+{
+  "uid" : "9aca2f965c440de9",
+  "name" : "testregistration",
+  "fullName" : "src.tests.automation.test_registration#testregistration",
+  "historyId" : "03a92a85874beb9876d9300edfb20540",
+  "time" : {
+    "start" : 1628533979823,
+    "stop" : 1628533979823,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: 'counter.txt'",
+  "statusTrace" : "def testregistration():\n>       file = open('counter.txt', 'r')\nE       FileNotFoundError: [Errno 2] No such file or directory: 'counter.txt'\n\nsrc/tests/automation/test_registration.py:7: FileNotFoundError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "src.tests.automation"
+  }, {
+    "name" : "suite",
+    "value" : "test_registration"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-504"
+  }, {
+    "name" : "thread",
+    "value" : "3621-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "src.tests.automation.test_registration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "9aca2f965c440de9.json",
+  "parameterValues" : [ ]
+}

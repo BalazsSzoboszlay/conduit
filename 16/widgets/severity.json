@@ -1,0 +1,101 @@
+[ {
+  "uid" : "4808a3a9113ec50b",
+  "name" : "test_writefromfile",
+  "time" : {
+    "start" : 1628533979826,
+    "stop" : 1628533979829,
+    "duration" : 3
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "32856a1711215fa7",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1628533974533,
+    "stop" : 1628533979610,
+    "duration" : 5077
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "9aca2f965c440de9",
+  "name" : "testregistration",
+  "time" : {
+    "start" : 1628533979823,
+    "stop" : 1628533979823,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "102ba5fb67d7653c",
+  "name" : "test_adddata",
+  "time" : {
+    "start" : 1628533974271,
+    "stop" : 1628533974273,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4ce942fea53b14f6",
+  "name" : "test_pagination",
+  "time" : {
+    "start" : 1628533979641,
+    "stop" : 1628533979644,
+    "duration" : 3
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "58ac01ec0526da2b",
+  "name" : "test_logout",
+  "time" : {
+    "start" : 1628533979639,
+    "stop" : 1628533979639,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4fd2c28cf52fd014",
+  "name" : "test_listallelements",
+  "time" : {
+    "start" : 1628533974478,
+    "stop" : 1628533974481,
+    "duration" : 3
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "d8eaa91a70369c1",
+  "name" : "test_policy",
+  "time" : {
+    "start" : 1628533979696,
+    "stop" : 1628533979698,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "97f6331f872f7f52",
+  "name" : "test_editdata",
+  "time" : {
+    "start" : 1628533974423,
+    "stop" : 1628533974425,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "74a68be8aa4a79ce",
+  "name" : "test_deletedata",
+  "time" : {
+    "start" : 1628533974367,
+    "stop" : 1628533974370,
+    "duration" : 3
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
