@@ -5,7 +5,7 @@ from selenium import webdriver
 
 
 def test_listallelements():
-    driver = webdriver.Chrome("driver\\chromedriver.exe")
+    driver = webdriver.Chrome("driver/chromedriver")
     if os.path.exists("output.txt"):
         os.remove("output.txt")
 

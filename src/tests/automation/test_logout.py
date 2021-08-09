@@ -15,7 +15,7 @@ def test_logout():
     file2.write(str(temp))
     file2.close()
 
-    driver = webdriver.Chrome("driver\\chromedriver.exe")
+    driver = webdriver.Chrome("driver/chromedriver")
 
     driver.get("http://localhost:1667/#/login")
     time.sleep(3)

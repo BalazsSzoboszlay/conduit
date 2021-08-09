@@ -3,7 +3,7 @@ import time
 from selenium import webdriver
 def test_policy():
 
-    driver = webdriver.Chrome("driver\\chromedriver.exe")
+    driver = webdriver.Chrome("driver/chromedriver")
     driver.get("http://localhost:1667/#/")
     driver.delete_all_cookies()
     time.sleep(2)

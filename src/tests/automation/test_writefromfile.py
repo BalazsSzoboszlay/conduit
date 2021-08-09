@@ -26,7 +26,7 @@ def test_writefromfile():
     email = name + "@hotmail.com"
     pw = "Userpass1"
 
-    driver = webdriver.Chrome("driver\\chromedriver.exe")
+    driver = webdriver.Chrome("driver/chromedriver")
 
     driver.get("http://localhost:1667/#/login")
     time.sleep(3)

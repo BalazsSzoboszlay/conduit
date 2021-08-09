@@ -26,6 +26,7 @@ jobs:
       - name: Install Chrome
         run: |
             sudo apt install google-chrome-stable
+            sudo apt-get install chromium-chromedriver
 
       - name: Allure Report action from marketplace
         uses: simple-elf/allure-report-action@master

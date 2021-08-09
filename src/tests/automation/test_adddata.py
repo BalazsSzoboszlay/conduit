@@ -10,7 +10,7 @@ def test_adddata():
     email = name + "@hotmail.com"
     pw = "Userpass1"
 
-    driver = webdriver.Chrome("driver\\chromedriver.exe")
+    driver = webdriver.Chrome("./chromedriver")
 
     driver.get("http://localhost:1667/#/login")
     time.sleep(3)

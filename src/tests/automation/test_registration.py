@@ -16,7 +16,7 @@ def testregistration():
     file2.write(str(temp))
     file2.close()
 
-    driver = webdriver.Chrome("driver\\chromedriver.exe")
+    driver = webdriver.Chrome("driver/chromedriver")
 
     driver.get("http://localhost:1667/#/register")
     time.sleep(3)
