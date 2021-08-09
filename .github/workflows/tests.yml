@@ -42,6 +42,12 @@ jobs:
          sudo apt-get install google-chrome-stable
          sudo apt-get install chromium-chromedriver
 
+      - run: docker-compose up -d
+      
+      -  name: Sleep for 45 seconds
+         run: sleep 45s
+         shell: bash
+
 
       - name: Test with pytest
         run:  pytest --alluredir=allure-results
