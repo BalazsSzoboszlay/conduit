@@ -1,0 +1,151 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home",
+      "children" : [ {
+        "name" : "test_adddata",
+        "uid" : "1cf7a21b2ecda48d",
+        "parentUid" : "758f38363c9f5b3e7a8bde8aae9d46e5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628534402231,
+          "stop" : 1628534402234,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_deletedata",
+        "uid" : "8db7e2bddc52c167",
+        "parentUid" : "758f38363c9f5b3e7a8bde8aae9d46e5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628534402344,
+          "stop" : 1628534402347,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_editdata",
+        "uid" : "401fa1e670e08b1e",
+        "parentUid" : "758f38363c9f5b3e7a8bde8aae9d46e5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628534402416,
+          "stop" : 1628534402419,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_listallelements",
+        "uid" : "65c010d0facfd623",
+        "parentUid" : "758f38363c9f5b3e7a8bde8aae9d46e5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628534402491,
+          "stop" : 1628534402494,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_pagination",
+        "uid" : "ebd47d225013f34f",
+        "parentUid" : "758f38363c9f5b3e7a8bde8aae9d46e5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628534411022,
+          "stop" : 1628534411025,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_policy",
+        "uid" : "4ae852ae197b4830",
+        "parentUid" : "758f38363c9f5b3e7a8bde8aae9d46e5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628534411091,
+          "stop" : 1628534411094,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_writefromfile",
+        "uid" : "f3c0bc2cd5de8da4",
+        "parentUid" : "758f38363c9f5b3e7a8bde8aae9d46e5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628534411251,
+          "stop" : 1628534411254,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "758f38363c9f5b3e7a8bde8aae9d46e5"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div > div > div > form > fieldset:nth-child(1) > input\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "1be96e47d39c678b",
+        "parentUid" : "dfac3ac75b5e3815ea923aea56ae0050",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628534402559,
+          "stop" : 1628534410966,
+          "duration" : 8407
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "dfac3ac75b5e3815ea923aea56ae0050"
+    }, {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'counter.txt'",
+      "children" : [ {
+        "name" : "test_logout",
+        "uid" : "42097c239c4ccdc0",
+        "parentUid" : "710d639d486a80eae16db9ce12070919",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628534411016,
+          "stop" : 1628534411017,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testregistration",
+        "uid" : "9fab1fa3c1e4527f",
+        "parentUid" : "710d639d486a80eae16db9ce12070919",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628534411247,
+          "stop" : 1628534411248,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "710d639d486a80eae16db9ce12070919"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
