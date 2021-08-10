@@ -1,0 +1,101 @@
+[ {
+  "uid" : "47f7919e3835d773",
+  "name" : "test_deletedata",
+  "time" : {
+    "start" : 1628623819553,
+    "stop" : 1628623846567,
+    "duration" : 27014
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "973b38f3b03bd761",
+  "name" : "testregistration",
+  "time" : {
+    "start" : 1628623949455,
+    "stop" : 1628623961093,
+    "duration" : 11638
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "90429367909fe046",
+  "name" : "test_logout",
+  "time" : {
+    "start" : 1628623903684,
+    "stop" : 1628623920605,
+    "duration" : 16921
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b87a12b848b4da91",
+  "name" : "test_editdata",
+  "time" : {
+    "start" : 1628623846570,
+    "stop" : 1628623878994,
+    "duration" : 32424
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "503777e84e5eb4d4",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1628623892037,
+    "stop" : 1628623903681,
+    "duration" : 11644
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "369b90e7db11305f",
+  "name" : "test_policy",
+  "time" : {
+    "start" : 1628623937917,
+    "stop" : 1628623949452,
+    "duration" : 11535
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c965dc5146bc5492",
+  "name" : "test_listallelements",
+  "time" : {
+    "start" : 1628623878996,
+    "stop" : 1628623892034,
+    "duration" : 13038
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e759b0bdc19b404",
+  "name" : "test_writefromfile",
+  "time" : {
+    "start" : 1628623961096,
+    "stop" : 1628624003392,
+    "duration" : 42296
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33793f506aa09bd1",
+  "name" : "test_pagination",
+  "time" : {
+    "start" : 1628623920608,
+    "stop" : 1628623937913,
+    "duration" : 17305
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "52e3631e74ab2402",
+  "name" : "test_adddata",
+  "time" : {
+    "start" : 1628623781622,
+    "stop" : 1628623819550,
+    "duration" : 37928
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
