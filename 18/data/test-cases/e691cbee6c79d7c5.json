@@ -1,0 +1,53 @@
+{
+  "uid" : "e691cbee6c79d7c5",
+  "name" : "test_listallelements",
+  "fullName" : "src.tests.automation.test_login#test_listallelements",
+  "historyId" : "1ca7992e1a62640aeeab2b14a24f85e7",
+  "time" : {
+    "start" : 1628618375832,
+    "stop" : 1628618388911,
+    "duration" : 13079
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "src.tests.automation"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "host",
+    "value" : "fv-az33-581"
+  }, {
+    "name" : "thread",
+    "value" : "4429-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "src.tests.automation.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e691cbee6c79d7c5.json",
+  "parameterValues" : [ ]
+}
