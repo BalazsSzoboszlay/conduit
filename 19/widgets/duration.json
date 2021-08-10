@@ -1,0 +1,101 @@
+[ {
+  "uid" : "bec74c0ba343f446",
+  "name" : "testregistration",
+  "time" : {
+    "start" : 1628621417493,
+    "stop" : 1628621429403,
+    "duration" : 11910
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cfc02489a532a02e",
+  "name" : "test_editdata",
+  "time" : {
+    "start" : 1628621312379,
+    "stop" : 1628621345290,
+    "duration" : 32911
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a2b55eff2bd7f1d2",
+  "name" : "test_writefromfile",
+  "time" : {
+    "start" : 1628621429406,
+    "stop" : 1628621472113,
+    "duration" : 42707
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4e17ec97d1b27378",
+  "name" : "test_deletedata",
+  "time" : {
+    "start" : 1628621284995,
+    "stop" : 1628621312375,
+    "duration" : 27380
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "879595a560883046",
+  "name" : "test_pagination",
+  "time" : {
+    "start" : 1628621387862,
+    "stop" : 1628621405552,
+    "duration" : 17690
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "229bf5e62d3b8013",
+  "name" : "test_policy",
+  "time" : {
+    "start" : 1628621405558,
+    "stop" : 1628621417491,
+    "duration" : 11933
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d2a37e0a56654c4",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1628621358799,
+    "stop" : 1628621370672,
+    "duration" : 11873
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fc8a81ee08469263",
+  "name" : "test_adddata",
+  "time" : {
+    "start" : 1628621274659,
+    "stop" : 1628621284906,
+    "duration" : 10247
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "a040f7b3c025fcc",
+  "name" : "test_listallelements",
+  "time" : {
+    "start" : 1628621345293,
+    "stop" : 1628621358795,
+    "duration" : 13502
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e644da287db594e",
+  "name" : "test_logout",
+  "time" : {
+    "start" : 1628621370676,
+    "stop" : 1628621387859,
+    "duration" : 17183
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
