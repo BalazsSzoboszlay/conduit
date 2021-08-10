@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div > div > div > form > fieldset:nth-child(1) > input\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_adddata",
+        "uid" : "233449a521284dea",
+        "parentUid" : "dfac3ac75b5e3815ea923aea56ae0050",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628623244146,
+          "stop" : 1628623257275,
+          "duration" : 13129
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "dfac3ac75b5e3815ea923aea56ae0050"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
