@@ -21,15 +21,15 @@ def test_adddata():
     driver = webdriver.Chrome(options=chrome_options)
 
     driver.get("http://localhost:1667/#/login")
-    time.sleep(5)
+    time.sleep(8)
     driver.find_element_by_css_selector("#app > div > div > div > div > form > fieldset:nth-child(1) > input").send_keys(email)
     driver.find_element_by_css_selector("#app > div > div > div > div > form > fieldset:nth-child(2) > input").send_keys(pw)
     driver.find_element_by_css_selector("#app > div > div > div > div > form > button").click()
 
-    time.sleep(5)
+    time.sleep(8)
 
     driver.get("http://localhost:1667/#/editor")
-    time.sleep(5)
+    time.sleep(8)
 
     driver.find_element_by_css_selector("#app > div > div > div > div > form > fieldset > fieldset:nth-child(1) > input").clear()
     driver.find_element_by_css_selector("#app > div > div > div > div > form > fieldset > fieldset:nth-child(1) > input").send_keys("Title1")
@@ -39,6 +39,6 @@ def test_adddata():
     driver.find_element_by_css_selector("#app > div > div > div > div > form > fieldset > fieldset:nth-child(4) > div > div > ul > li > input").send_keys("Testtag")
     driver.find_element_by_css_selector("#app > div > div > div > div > form > fieldset > fieldset:nth-child(4) > div > div > ul > li > input").send_keys(Keys.RETURN)
     driver.find_element_by_css_selector("#app > div > div > div > div > form > button").click()
-    time.sleep(5)
+    time.sleep(8)
 
     assert driver.current_url == "http://localhost:1667/#/articles/title1"
