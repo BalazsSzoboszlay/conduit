@@ -1,0 +1,101 @@
+[ {
+  "uid" : "9753237c556479b6",
+  "name" : "test_pagination",
+  "time" : {
+    "start" : 1628621496759,
+    "stop" : 1628621514217,
+    "duration" : 17458
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc4c09d5a747db62",
+  "name" : "test_editdata",
+  "time" : {
+    "start" : 1628621422350,
+    "stop" : 1628621454982,
+    "duration" : 32632
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4b02f7620eef6185",
+  "name" : "test_deletedata",
+  "time" : {
+    "start" : 1628621395291,
+    "stop" : 1628621422347,
+    "duration" : 27056
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6babe880b71785c2",
+  "name" : "test_listallelements",
+  "time" : {
+    "start" : 1628621454984,
+    "stop" : 1628621468129,
+    "duration" : 13145
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8d85dd04a56d813e",
+  "name" : "testregistration",
+  "time" : {
+    "start" : 1628621525757,
+    "stop" : 1628621537449,
+    "duration" : 11692
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "113da30046c1fb70",
+  "name" : "test_logout",
+  "time" : {
+    "start" : 1628621479809,
+    "stop" : 1628621496757,
+    "duration" : 16948
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7667942f99474594",
+  "name" : "test_adddata",
+  "time" : {
+    "start" : 1628621369232,
+    "stop" : 1628621395288,
+    "duration" : 26056
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9b6b4f6742437907",
+  "name" : "test_writefromfile",
+  "time" : {
+    "start" : 1628621537452,
+    "stop" : 1628621579808,
+    "duration" : 42356
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2946c0c9b2a9bd4c",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1628621468132,
+    "stop" : 1628621479806,
+    "duration" : 11674
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e7b9c198d6a334aa",
+  "name" : "test_policy",
+  "time" : {
+    "start" : 1628621514225,
+    "stop" : 1628621525754,
+    "duration" : 11529
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
