@@ -1,29 +1,20 @@
 import time
 
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
+def test_policy():
+    chrome_options = Options()
+    chrome_options.add_argument('--window-size=1920,1080')
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--disable-dev-shm-usage')
 
-def testregistration():
-    file = open('counter.txt', 'r')
-    temp = int(file.readline())
-    file.close()
-
-    name = "user" + str(temp)
-    email = name + "@hotmail.com"
-    pw = "Userpass1"
-    temp += 1
-    file2 = open('counter.txt', 'w')
-    file2.write(str(temp))
-    file2.close()
-
-    driver = webdriver.Chrome("driver/chromedriver")
-
-    driver.get("http://localhost:1667/#/register")
-    time.sleep(3)
-    driver.find_element_by_css_selector("#app > div > div > div > div > form > fieldset:nth-child(1) > input").send_keys(name)
-    driver.find_element_by_css_selector("#app > div > div > div > div > form > fieldset:nth-child(2) > input").send_keys(email)
-    driver.find_element_by_css_selector("#app > div > div > div > div > form > fieldset:nth-child(3) > input").send_keys(pw)
-    driver.find_element_by_css_selector("#app > div > div > div > div > form > button").click()
-    time.sleep(4)
-    print("Current: " + driver.current_url)
-    assert driver.current_url == "http://localhost:1667/#/"
+    driver = webdriver.Chrome(options=chrome_options)
+    driver.get("http://localhost:1667/#/")
+    driver.delete_all_cookies()
+    time.sleep(2)
+    assert driver.find_element_by_css_selector("#cookie-policy-panel > div > div.cookie__bar__buttons > button.cookie__bar__buttons__button.cookie__bar__buttons__button--accept").is_displayed()
+    driver.find_element_by_css_selector("#cookie-policy-panel > div > div.cookie__bar__buttons > button.cookie__bar__buttons__button.cookie__bar__buttons__button--accept").click()
+    time.sleep(2)
+    assert driver.get_cookie("vue-cookie-accept-decline-cookie-policy-panel") is not None
