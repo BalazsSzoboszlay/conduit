@@ -1,9 +1,28 @@
+import os
 import time
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-def test_policy():
+#Regisztráció tesztelése, a teszt a mappájában található counter.txt fájlból szed sorszámot és
+# eggyel megnövelve felül is írja
+def testregistration():
+
+    scriptpath = os.path.dirname(__file__)
+    filename = os.path.join(scriptpath, 'counter.txt')
+
+    file = open(filename, 'r')
+    temp = int(file.readline())
+    file.close()
+
+    name = "user" + str(temp)
+    email = name + "@example.com"
+    pw = "Abcd123$"
+    temp += 1
+    file2 = open(filename, 'w')
+    file2.write(str(temp))
+    file2.close()
+
     chrome_options = Options()
     chrome_options.add_argument('--window-size=1920,1080')
     chrome_options.add_argument('--no-sandbox')
@@ -11,10 +30,12 @@ def test_policy():
     chrome_options.add_argument('--disable-dev-shm-usage')
 
     driver = webdriver.Chrome(options=chrome_options)
-    driver.get("http://localhost:1667/#/")
-    driver.delete_all_cookies()
-    time.sleep(2)
-    assert driver.find_element_by_css_selector("#cookie-policy-panel > div > div.cookie__bar__buttons > button.cookie__bar__buttons__button.cookie__bar__buttons__button--accept").is_displayed()
-    driver.find_element_by_css_selector("#cookie-policy-panel > div > div.cookie__bar__buttons > button.cookie__bar__buttons__button.cookie__bar__buttons__button--accept").click()
-    time.sleep(2)
-    assert driver.get_cookie("vue-cookie-accept-decline-cookie-policy-panel") is not None
+
+    driver.get("http://localhost:1667/#/register")
+    time.sleep(5)
+    driver.find_element_by_css_selector("#app > div > div > div > div > form > fieldset:nth-child(1) > input").send_keys(name)
+    driver.find_element_by_css_selector("#app > div > div > div > div > form > fieldset:nth-child(2) > input").send_keys(email)
+    driver.find_element_by_css_selector("#app > div > div > div > div > form > fieldset:nth-child(3) > input").send_keys(pw)
+    driver.find_element_by_css_selector("#app > div > div > div > div > form > button").click()
+    time.sleep(5)
+    assert driver.current_url == "http://localhost:1667/#/"

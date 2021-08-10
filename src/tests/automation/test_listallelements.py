@@ -4,7 +4,8 @@ import os
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-
+# Lista meglétének ellenőrzése, és fájlba való kiíratása,
+# a teszt akkor tekinthető sikeresnek, ha a kimeneti fájl nem üres (minden teszt előtt töröljük)
 def test_listallelements():
 
     chrome_options = Options()

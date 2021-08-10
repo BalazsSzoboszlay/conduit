@@ -4,7 +4,8 @@ import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-
+#Kilépés vizsgálata, a teszt sikeres, ha a logout gomb bejelentkezés után látható,
+# de kattintás után nem, azaz kattintás után nincs bejelentkezett felhasználó.
 def test_logout():
 
     chrome_options = Options()

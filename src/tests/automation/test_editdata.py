@@ -4,7 +4,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 
-
+# Adatmódosítás ellenőrzése, a teszt létrehoz egy megadott adatot, majd azt felülírja,
+# a teszt a felülírt adat lapjának címét vizsgálja, ami megegyezik a módosított adatszerkezet címével
 def test_editdata():
 
     chrome_options = Options()

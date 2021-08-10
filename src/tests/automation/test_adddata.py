@@ -4,7 +4,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 
-
+#Adat létrehozásának vizsgálata, a teszt a hozzászólás utáni átirányított oldal url-jét vizsgálja,
+# ami megegyezik a létrehozott adatszerkezet címével
 def test_adddata():
 
     chrome_options = Options()
