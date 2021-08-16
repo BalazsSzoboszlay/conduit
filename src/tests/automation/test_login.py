@@ -3,7 +3,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-# Bejelentkezés vizsgálata, a teszt a bejelentkezés utáni,
+# TC 02 - Bejelentkezés vizsgálata, a teszt a bejelentkezés utáni,
 # főoldalra történő visszairányítást tekinti sikeres esetnek.
 def test_login():
 

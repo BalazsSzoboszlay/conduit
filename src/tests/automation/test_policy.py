@@ -3,7 +3,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-#Adatvédelmi nyilatkozat elfogadás/elutasítás tesztelése, a teszt a panel meglétét,
+# TC 03 - Adatvédelmi nyilatkozat elfogadás/elutasítás tesztelése, a teszt a panel meglétét,
 # majd az elfogadásra kattintáskor a panel eltűnését vizsgálja.
 def test_policy():
     chrome_options = Options()

@@ -22,7 +22,7 @@ def addnewdata(driver, intitle, inabout, inmessage, intags):
     time.sleep(5)
 
 
-# Bemeneti tesztadatok megadása külső fájlból.
+# TC 07 - Bemeneti tesztadatok megadása külső fájlból.
 # A teszt a saját mappájában megtalálható input.txt fájlból várja a tesztadatokat.
 def test_writefromfile():
     name = "testuser1"

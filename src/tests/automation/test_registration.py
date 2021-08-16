@@ -4,7 +4,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-#Regisztráció tesztelése, a teszt a mappájában található counter.txt fájlból szed sorszámot és
+# TC 01 - Regisztráció tesztelése, a teszt a mappájában található counter.txt fájlból szed sorszámot és
 # eggyel megnövelve felül is írja
 def testregistration():
 

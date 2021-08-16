@@ -4,7 +4,7 @@ import os
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-# Lista meglétének ellenőrzése, és fájlba való kiíratása,
+# TC 04 + TC 10 Lista meglétének ellenőrzése, és fájlba való kiíratása,
 # a teszt akkor tekinthető sikeresnek, ha a kimeneti fájl nem üres (minden teszt előtt töröljük)
 def test_listallelements():
 

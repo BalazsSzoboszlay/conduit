@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 
-#Adat törlésének vizsgálata, a teszt a törlés utáni visszairányítást vizsgálja
+# TC 09 - Adat törlésének vizsgálata, a teszt a törlés utáni visszairányítást vizsgálja
 def test_deletedata():
     chrome_options = Options()
     chrome_options.add_argument('--window-size=1920,1080')

@@ -18,7 +18,7 @@ def listallelements(driver):
         text += "\n" + driver.find_elements_by_class_name("preview-link").__getitem__(x).text
         text += "\n------------"
 
-#Lapozás vizsgálata, a teszt feltételezi,
+# TC 05 - Lapozás vizsgálata, a teszt feltételezi,
 # hogy több lap van és a lapozó felület látható és kattintható.
 def test_pagination():
     name = "testuser1"
