@@ -1,0 +1,131 @@
+{
+  "uid" : "3fc4c1162d760c96",
+  "name" : "test_adddata",
+  "fullName" : "src.tests.automation.test_adddata#test_adddata",
+  "historyId" : "060023d30fffe9a2f7368db593bb8284",
+  "time" : {
+    "start" : 1629147635574,
+    "stop" : 1629147674682,
+    "duration" : 39108
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "src.tests.automation"
+  }, {
+    "name" : "suite",
+    "value" : "test_adddata"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-944"
+  }, {
+    "name" : "thread",
+    "value" : "4498-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "src.tests.automation.test_adddata"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "52e3631e74ab2402",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/22//#testresult/52e3631e74ab2402",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628623781622,
+          "stop" : 1628623819550,
+          "duration" : 37928
+        }
+      }, {
+        "uid" : "233449a521284dea",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/21//#testresult/233449a521284dea",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div > div > div > form > fieldset:nth-child(1) > input\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628623244146,
+          "stop" : 1628623257275,
+          "duration" : 13129
+        }
+      }, {
+        "uid" : "7667942f99474594",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/20//#testresult/7667942f99474594",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628621369232,
+          "stop" : 1628621395288,
+          "duration" : 26056
+        }
+      }, {
+        "uid" : "fc8a81ee08469263",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/19//#testresult/fc8a81ee08469263",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div > div > div > form > fieldset:nth-child(1) > input\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628621274659,
+          "stop" : 1628621284906,
+          "duration" : 10247
+        }
+      }, {
+        "uid" : "b8f4895239809df0",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/18//#testresult/b8f4895239809df0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628618276993,
+          "stop" : 1628618303265,
+          "duration" : 26272
+        }
+      }, {
+        "uid" : "1cf7a21b2ecda48d",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/17//#testresult/1cf7a21b2ecda48d",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home",
+        "time" : {
+          "start" : 1628534402231,
+          "stop" : 1628534402234,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "102ba5fb67d7653c",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/16//#testresult/102ba5fb67d7653c",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home",
+        "time" : {
+          "start" : 1628533974271,
+          "stop" : 1628533974273,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3fc4c1162d760c96.json",
+  "parameterValues" : [ ]
+}

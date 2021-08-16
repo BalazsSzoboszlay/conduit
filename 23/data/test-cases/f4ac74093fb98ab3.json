@@ -1,0 +1,129 @@
+{
+  "uid" : "f4ac74093fb98ab3",
+  "name" : "test_editdata",
+  "fullName" : "src.tests.automation.test_editdata#test_editdata",
+  "historyId" : "2c9f6e54cccb96151632d5fe6abc9c90",
+  "time" : {
+    "start" : 1629147702053,
+    "stop" : 1629147734850,
+    "duration" : 32797
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "src.tests.automation"
+  }, {
+    "name" : "suite",
+    "value" : "test_editdata"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-944"
+  }, {
+    "name" : "thread",
+    "value" : "4498-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "src.tests.automation.test_editdata"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "b87a12b848b4da91",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/22//#testresult/b87a12b848b4da91",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628623846570,
+          "stop" : 1628623878994,
+          "duration" : 32424
+        }
+      }, {
+        "uid" : "15e18b241c731a7",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/21//#testresult/15e18b241c731a7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628623284679,
+          "stop" : 1628623317514,
+          "duration" : 32835
+        }
+      }, {
+        "uid" : "dc4c09d5a747db62",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/20//#testresult/dc4c09d5a747db62",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628621422350,
+          "stop" : 1628621454982,
+          "duration" : 32632
+        }
+      }, {
+        "uid" : "cfc02489a532a02e",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/19//#testresult/cfc02489a532a02e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628621312379,
+          "stop" : 1628621345290,
+          "duration" : 32911
+        }
+      }, {
+        "uid" : "2dfd524e37879c45",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/18//#testresult/2dfd524e37879c45",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628618330305,
+          "stop" : 1628618362719,
+          "duration" : 32414
+        }
+      }, {
+        "uid" : "401fa1e670e08b1e",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/17//#testresult/401fa1e670e08b1e",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home",
+        "time" : {
+          "start" : 1628534402416,
+          "stop" : 1628534402419,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "97f6331f872f7f52",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/16//#testresult/97f6331f872f7f52",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home",
+        "time" : {
+          "start" : 1628533974423,
+          "stop" : 1628533974425,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f4ac74093fb98ab3.json",
+  "parameterValues" : [ ]
+}
