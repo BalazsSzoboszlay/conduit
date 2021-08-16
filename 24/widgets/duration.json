@@ -1,0 +1,101 @@
+[ {
+  "uid" : "3050e6659e8b76ec",
+  "name" : "test_policy",
+  "time" : {
+    "start" : 1629148123761,
+    "stop" : 1629148135413,
+    "duration" : 11652
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "890712ab91d54412",
+  "name" : "test_adddata",
+  "time" : {
+    "start" : 1629147964156,
+    "stop" : 1629148003562,
+    "duration" : 39406
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c02935c19116420c",
+  "name" : "test_listallelements",
+  "time" : {
+    "start" : 1629148063518,
+    "stop" : 1629148077259,
+    "duration" : 13741
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3dc1f6a445d79f4e",
+  "name" : "test_logout",
+  "time" : {
+    "start" : 1629148089082,
+    "stop" : 1629148106172,
+    "duration" : 17090
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c991846ef4ed928e",
+  "name" : "test_writefromfile",
+  "time" : {
+    "start" : 1629148147214,
+    "stop" : 1629148189879,
+    "duration" : 42665
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cacf46b69f6d1af1",
+  "name" : "test_editdata",
+  "time" : {
+    "start" : 1629148030796,
+    "stop" : 1629148063515,
+    "duration" : 32719
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f68dd9f3f59ca5e",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1629148077261,
+    "stop" : 1629148089079,
+    "duration" : 11818
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "680bcfa53542eede",
+  "name" : "test_pagination",
+  "time" : {
+    "start" : 1629148106175,
+    "stop" : 1629148123756,
+    "duration" : 17581
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "53ad9822e44d4fa8",
+  "name" : "testregistration",
+  "time" : {
+    "start" : 1629148135417,
+    "stop" : 1629148147211,
+    "duration" : 11794
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ce680a70fed54895",
+  "name" : "test_deletedata",
+  "time" : {
+    "start" : 1629148003565,
+    "stop" : 1629148030793,
+    "duration" : 27228
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
