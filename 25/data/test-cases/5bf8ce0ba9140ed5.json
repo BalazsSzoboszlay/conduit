@@ -1,0 +1,155 @@
+{
+  "uid" : "5bf8ce0ba9140ed5",
+  "name" : "test_adddata",
+  "fullName" : "src.tests.automation.test_adddata#test_adddata",
+  "historyId" : "060023d30fffe9a2f7368db593bb8284",
+  "time" : {
+    "start" : 1629149555057,
+    "stop" : 1629149568503,
+    "duration" : 13446
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div > div > div > form > fieldset:nth-child(1) > input\"}\n  (Session info: headless chrome=92.0.4515.131)",
+  "statusTrace" : "def test_adddata():\n    \n        chrome_options = Options()\n        chrome_options.add_argument('--window-size=1920,1080')\n        chrome_options.add_argument('--no-sandbox')\n        chrome_options.add_argument('--headless')\n        chrome_options.add_argument('--disable-dev-shm-usage')\n    \n        name = \"testuser1\"\n        email = name + \"@example.com\"\n        pw = \"Abcd123$\"\n    \n        driver = webdriver.Chrome(options=chrome_options)\n    \n        driver.get(\"http://localhost:1667/#/login\")\n        time.sleep(8)\n>       driver.find_element_by_css_selector(\"#app > div > div > div > div > form > fieldset:nth-child(1) > input\").send_keys(email)\n\nsrc/tests/automation/test_adddata.py:25: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py:598: in find_element_by_css_selector\n    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)\n/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py:976: in find_element\n    return self.execute(Command.FIND_ELEMENT, {\n/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py:321: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7fb4f4164610>\nresponse = {'status': 404, 'value': '{\"value\":{\"error\":\"no such element\",\"message\":\"no such element: Unable to locate element: {\\...\\\\n#16 0x562fd3e68ad8 \\\\u003Cunknown>\\\\n#17 0x562fd3e824c6 \\\\u003Cunknown>\\\\n#18 0x7f114fe5b6db \\\\u003Cunknown>\\\\n\"}}'}\n\n    def check_response(self, response):\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if status is None or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, basestring):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if status is None:\n                        status = value[\"status\"]\n                        message = value[\"value\"]\n                        if not isinstance(message, basestring):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class = ErrorInResponseException\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if value == '' or value is None:\n            value = response['value']\n        if isinstance(value, basestring):\n            if exception_class == ErrorInResponseException:\n                raise exception_class(response, value)\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        if 'stackTrace' in value and value['stackTrace']:\n            stacktrace = []\n            try:\n                for frame in value['stackTrace']:\n                    line = self._value_or_default(frame, 'lineNumber', '')\n                    file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                    if line:\n                        file = \"%s:%s\" % (file, line)\n                    meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                    if 'className' in frame:\n                        meth = \"%s.%s\" % (frame['className'], meth)\n                    msg = \"    at %s (%s)\"\n                    msg = msg % (meth, file)\n                    stacktrace.append(msg)\n            except TypeError:\n                pass\n        if exception_class == ErrorInResponseException:\n            raise exception_class(response, message)\n        elif exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div > div > div > form > fieldset:nth-child(1) > input\"}\nE         (Session info: headless chrome=92.0.4515.131)\n\n/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py:242: NoSuchElementException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "src.tests.automation"
+  }, {
+    "name" : "suite",
+    "value" : "test_adddata"
+  }, {
+    "name" : "host",
+    "value" : "fv-az33-581"
+  }, {
+    "name" : "thread",
+    "value" : "4519-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "src.tests.automation.test_adddata"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 5,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "890712ab91d54412",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/24//#testresult/890712ab91d54412",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629147964156,
+          "stop" : 1629148003562,
+          "duration" : 39406
+        }
+      }, {
+        "uid" : "3fc4c1162d760c96",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/23//#testresult/3fc4c1162d760c96",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629147635574,
+          "stop" : 1629147674682,
+          "duration" : 39108
+        }
+      }, {
+        "uid" : "52e3631e74ab2402",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/22//#testresult/52e3631e74ab2402",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628623781622,
+          "stop" : 1628623819550,
+          "duration" : 37928
+        }
+      }, {
+        "uid" : "233449a521284dea",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/21//#testresult/233449a521284dea",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div > div > div > form > fieldset:nth-child(1) > input\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628623244146,
+          "stop" : 1628623257275,
+          "duration" : 13129
+        }
+      }, {
+        "uid" : "7667942f99474594",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/20//#testresult/7667942f99474594",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628621369232,
+          "stop" : 1628621395288,
+          "duration" : 26056
+        }
+      }, {
+        "uid" : "fc8a81ee08469263",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/19//#testresult/fc8a81ee08469263",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div > div > div > form > fieldset:nth-child(1) > input\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628621274659,
+          "stop" : 1628621284906,
+          "duration" : 10247
+        }
+      }, {
+        "uid" : "b8f4895239809df0",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/18//#testresult/b8f4895239809df0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628618276993,
+          "stop" : 1628618303265,
+          "duration" : 26272
+        }
+      }, {
+        "uid" : "1cf7a21b2ecda48d",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/17//#testresult/1cf7a21b2ecda48d",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home",
+        "time" : {
+          "start" : 1628534402231,
+          "stop" : 1628534402234,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "102ba5fb67d7653c",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/16//#testresult/102ba5fb67d7653c",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home",
+        "time" : {
+          "start" : 1628533974271,
+          "stop" : 1628533974273,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5bf8ce0ba9140ed5.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,138 @@
+{
+  "uid" : "8dd4927c904688b3",
+  "name" : "test_login",
+  "fullName" : "src.tests.automation.test_login#test_login",
+  "historyId" : "57322d47627e683a42b0dbc7b4adf734",
+  "time" : {
+    "start" : 1629149642280,
+    "stop" : 1629149654041,
+    "duration" : 11761
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "src.tests.automation"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "host",
+    "value" : "fv-az33-581"
+  }, {
+    "name" : "thread",
+    "value" : "4519-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "src.tests.automation.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "1f68dd9f3f59ca5e",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/24//#testresult/1f68dd9f3f59ca5e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629148077261,
+          "stop" : 1629148089079,
+          "duration" : 11818
+        }
+      }, {
+        "uid" : "987e312758cbc4e0",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/23//#testresult/987e312758cbc4e0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629147748276,
+          "stop" : 1629147760133,
+          "duration" : 11857
+        }
+      }, {
+        "uid" : "503777e84e5eb4d4",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/22//#testresult/503777e84e5eb4d4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628623892037,
+          "stop" : 1628623903681,
+          "duration" : 11644
+        }
+      }, {
+        "uid" : "78ddda1695028ce1",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/21//#testresult/78ddda1695028ce1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628623330968,
+          "stop" : 1628623342819,
+          "duration" : 11851
+        }
+      }, {
+        "uid" : "2946c0c9b2a9bd4c",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/20//#testresult/2946c0c9b2a9bd4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628621468132,
+          "stop" : 1628621479806,
+          "duration" : 11674
+        }
+      }, {
+        "uid" : "4d2a37e0a56654c4",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/19//#testresult/4d2a37e0a56654c4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628621358799,
+          "stop" : 1628621370672,
+          "duration" : 11873
+        }
+      }, {
+        "uid" : "1be96e47d39c678b",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/17//#testresult/1be96e47d39c678b",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div > div > div > form > fieldset:nth-child(1) > input\"}\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628534402559,
+          "stop" : 1628534410966,
+          "duration" : 8407
+        }
+      }, {
+        "uid" : "32856a1711215fa7",
+        "reportUrl" : "https://BalazsSzoboszlay.github.io/conduit/16//#testresult/32856a1711215fa7",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: headless chrome=92.0.4515.131)",
+        "time" : {
+          "start" : 1628533974533,
+          "stop" : 1628533979610,
+          "duration" : 5077
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "8dd4927c904688b3.json",
+  "parameterValues" : [ ]
+}
